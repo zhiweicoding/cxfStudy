@@ -31,7 +31,6 @@ import java.util.Map;
 public class HelloWorldImpl implements HelloWorld {
     Map<Integer, User> users = new LinkedHashMap<Integer, User>();
 
-
     public String sayHi(String text) {
         System.out.println("sayHi called");
         return "Hello " + text;
