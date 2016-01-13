@@ -13,6 +13,7 @@ import javax.xml.ws.soap.SOAPBinding;
 
 /**
  * Created by zhiwei on 2016/1/13.
+ * <p/>
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements. See the NOTICE file
  * distributed with this work for additional information
@@ -20,9 +21,9 @@ import javax.xml.ws.soap.SOAPBinding;
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License. You may obtain a copy of the License at
- * <p>
+ * <p/>
  * http://www.apache.org/licenses/LICENSE-2.0
- * <p>
+ * <p/>
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -34,10 +35,8 @@ import javax.xml.ws.soap.SOAPBinding;
 
 public final class Client {
 
-    private static final QName SERVICE_NAME
-            = new QName("http://server.hw.demo/", "HelloWorld");
-    private static final QName PORT_NAME
-            = new QName("http://server.hw.demo/", "HelloWorldPort");
+    private static final QName SERVICE_NAME = new QName("http://server.myloverqian.com/", "HelloWorld");
+    private static final QName PORT_NAME = new QName("http://server.myloverqian.com/", "HelloWorldPort");
 
 
     private Client() {
@@ -46,7 +45,7 @@ public final class Client {
     public static void main(String args[]) throws Exception {
         Service service = Service.create(SERVICE_NAME);
         // Endpoint Address
-        String endpointAddress = "http://localhost:9000/helloWorld";
+        String endpointAddress = "http://localhost:9000/cxfstudy/services/hello_world";
         // If web service deployed on Tomcat (either standalone or embedded)
         // as described in sample README, endpoint should be changed to:
         // String endpointAddress = "http://localhost:8080/java_first_jaxws/services/hello_world";
