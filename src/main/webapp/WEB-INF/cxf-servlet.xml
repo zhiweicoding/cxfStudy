@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:jaxws="http://cxf.apache.org/jaxws" xmlns:soap="http://cxf.apache.org/bindings/soap"
        xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://cxf.apache.org/bindings/soap http://cxf.apache.org/schemas/configuration/soap.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
@@ -9,5 +10,13 @@
             <bean class="com.myloverqian.server.impl.HelloWorldImpl"/>
         </jaxws:serviceBean>
     </jaxws:server>
+
+    <jaxws:server id="jaxwsServiceSample" serviceClass="com.myloverqian.server.HelloWorldSample"
+                  address="/hello_world_sample">
+        <jaxws:serviceBean>
+            <bean class="com.myloverqian.server.impl.HelloWorldSampleImpl"/>
+        </jaxws:serviceBean>
+    </jaxws:server>
+
 
 </beans>
