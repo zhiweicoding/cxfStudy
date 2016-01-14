@@ -1,5 +1,7 @@
 package com.myloverqian.server;
 
+import com.myloverqian.server.bean.User;
+
 import java.util.Map;
 import javax.jws.WebService;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;

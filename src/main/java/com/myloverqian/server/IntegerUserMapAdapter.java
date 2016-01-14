@@ -1,5 +1,8 @@
 package com.myloverqian.server;
 
+import com.myloverqian.server.IntegerUserMap;
+import com.myloverqian.server.bean.User;
+
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 import java.util.LinkedHashMap;
 import java.util.Map;

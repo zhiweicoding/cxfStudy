@@ -1,4 +1,7 @@
-package com.myloverqian.server;
+package com.myloverqian.server.impl;
+
+import com.myloverqian.server.HelloWorld;
+import com.myloverqian.server.bean.User;
 
 import javax.jws.WebService;
 import java.util.LinkedHashMap;

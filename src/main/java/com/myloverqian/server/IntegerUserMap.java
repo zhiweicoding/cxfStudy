@@ -1,5 +1,7 @@
 package com.myloverqian.server;
 
+import com.myloverqian.server.bean.User;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;

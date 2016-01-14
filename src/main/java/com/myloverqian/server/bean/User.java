@@ -1,4 +1,6 @@
-package com.myloverqian.server;
+package com.myloverqian.server.bean;
+
+import com.myloverqian.server.bean.adapter.UserAdapter;
 
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 

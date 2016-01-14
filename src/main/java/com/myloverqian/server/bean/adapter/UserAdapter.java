@@ -1,4 +1,7 @@
-package com.myloverqian.server;
+package com.myloverqian.server.bean.adapter;
+
+import com.myloverqian.server.bean.User;
+import com.myloverqian.server.bean.impl.UserImpl;
 
 import javax.xml.bind.ValidationEventHandler;
 import javax.xml.bind.annotation.adapters.XmlAdapter;

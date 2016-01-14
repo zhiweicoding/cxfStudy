@@ -6,7 +6,7 @@
 
     <jaxws:server id="jaxwsService" serviceClass="com.myloverqian.server.HelloWorld" address="/hello_world">
         <jaxws:serviceBean>
-            <bean class="com.myloverqian.server.HelloWorldImpl"/>
+            <bean class="com.myloverqian.server.impl.HelloWorldImpl"/>
         </jaxws:serviceBean>
     </jaxws:server>
 
